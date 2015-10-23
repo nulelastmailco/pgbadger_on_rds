@@ -73,7 +73,7 @@ download_and_run_fun() {
 #remove file, if exists
 rm -f $PGBADGER_HOME/$AWS_INSTANCE/postgresql.log.$1
 
- #describe and downlowd log files for yesterday
+ #describe and download log files for yesterday
 for filename  in $( rds-describe-db-log-files $AWS_INSTANCE --region $AWS_REGION |awk {'print $2'}|grep $1)
 do
 
