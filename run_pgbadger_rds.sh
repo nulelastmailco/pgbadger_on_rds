@@ -7,7 +7,7 @@ usage()
 cat << EOF
 usage: $0 options
 
-This script will downalod the postgres rds log files and generate pgbadger reports
+This script will download the postgres rds log files and generate pgbadger reports
 
 OPTIONS:
    -h      Show this message
